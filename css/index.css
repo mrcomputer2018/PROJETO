@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --black: #333;
+    --white: #fff;
+    --light-color: #facc15;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/** navbar**/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    padding: 1rem 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo img {
+    height: 8rem;
+}
+
+header .navbar a{
+    font-size: 1.9rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+    border: .1rem solid transparent;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: var(--white);
+    border: .1rem solid rgba(205, 170, 124, 0.2);
+}
+
+header .icons i {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    background-color: var(--light-color);
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+header .icons i:hover {
+    color:  var(--white);
+}
