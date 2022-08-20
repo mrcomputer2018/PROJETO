@@ -56,7 +56,7 @@ header .navbar a{
 header .navbar a.active,
 header .navbar a:hover{
     color: var(--white);
-    border: .1rem solid rgba(205, 170, 124, 0.2);
+    border: .1rem solid rgba(250, 204, 21, 0.2);
 }
 
 header .icons i {
