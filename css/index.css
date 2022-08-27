@@ -79,6 +79,10 @@ header .icons #menu
 	display: none;
 }
 
+p.cort {
+    color: red;
+}
+
 /** media query**/
 @media (max-width: 991px) {
     html {
