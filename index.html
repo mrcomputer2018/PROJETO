@@ -42,20 +42,18 @@
                     <!-- Slide 1 -->
                     <div class="swiper-slide slide slide1">
                         <div class="content">
-                            <img src="" alt="">
-                            <h3>Delicias Risto</h3>
+                            <h3>Delicias Italianas</h3>
                             <h1>Voucher de presente</h1>
                             <p>
-                                presenteie seus amigos e familiares queridos
+                                presenteie seus amigos & familiares queridos
                             </p>
                             <a href="#" class="btn">Peça agora</a>
                         </div>
                     </div>
                     <!-- Slide 2 -->
-                    <div class="swiper-slide slide slide1">
+                    <div class="swiper-slide slide slide2">
                         <div class="content">
-                            <img src="" alt="">
-                            <h3>10% de Desconto</h3>
+                           <h3>10% de Desconto</h3>
                             <h1>Pizzas</h1>
                             <p>
                                 varios pratos típicos
@@ -64,11 +62,10 @@
                         </div>
                     </div>
                     <!-- Slide 3 -->
-                    <div class="swiper-slide slide slide1">
+                    <div class="swiper-slide slide slide3">
                         <div class="content">
-                            <img src="" alt="">
                             <h3>Estamos Abertos</h3>
-                            <h1>Massas Frescas Artesanais</h1>
+                            <h1>Massas Frescas<br>Artesanais</h1>
                             <p>
                                 você vai adorar
                             </p>
@@ -76,14 +73,30 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="swiper-pagination"></div>
             </div>
         </div>
         <!-- Fim carrossel -->
        
        <!-- scripts -->
+       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
        <script type="text/javascript">
+             /** carrossel **/
+            var swiper = new Swiper(".home-slider", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                delay: 7500,
+                disableOnInteraction: false,
+                },
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                loop:true,
+            });
+            
+            /** navbar **/
             let menu = document.querySelector('#menu');
             let navbar = document.querySelector('.navbar');
 
