@@ -104,7 +104,7 @@ header .navbar a{
 }
 
 header .navbar a.active,
-header .navbar a:hover{
+header .navbar a:hover {
     color: var(--white);
     border: .1rem solid rgba(250, 204, 21, 0.2);
 }
@@ -124,8 +124,7 @@ header .icons i:hover {
     color:  var(--white);
 }
 
-header .icons #menu
-{
+header .icons #menu {
 	display: none;
 }
 
@@ -151,7 +150,7 @@ header .icons #menu
 
 .home .home-slider .slide1,
 .home .home-slider .slide2,
-.home .home-slider .slide3  {
+.home .home-slider .slide3 {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -159,18 +158,6 @@ header .icons #menu
 .home .home-slider .slide .content {	
 	text-align: center;
 	padding-left: 9rem;
-}
-
-.home .home-slider .slide .content i {
-    cursor: pointer;
-    margin-left: .5rem;
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    color: #333;
-    background-color: var(--light-color);
-    text-align: center;
-    font-size: 1.9rem;
 }
 
 .home .home-slider .slide .content h3 {
@@ -192,6 +179,7 @@ header .icons #menu
 	line-height: 1.5;
 	font-weight: 200;
 }
+
 .swiper-pagination-bullet {
 	background: var(--light-color);
 	width: 15px;
