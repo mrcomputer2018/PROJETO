@@ -31,6 +31,7 @@ html {
 	text-align: center;
 	color: var(--black);
 	font-size: 4.5rem;
+    padding-top: 10rem;
 	padding-bottom: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 1.3px;
@@ -53,6 +54,19 @@ html {
 	font-size: 1.7rem;
 	color: var(--black);
 	border: .1rem solid rgba(205, 170, 124, 0.2);
+	background: var(--light-color);
+	cursor: pointer;
+	padding: .8rem 3rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.box .content a.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	font-size: 1.7rem;
+	color: var(--white);
+	border: 1rem solid rgba(205, 170, 124, 0.2);
 	background: transparent;
 	cursor: pointer;
 	padding: .8rem 3rem;
@@ -187,6 +201,77 @@ header .icons #menu {
 	border-radius: 0;
 }
 
+/** bem-vindo **/
+.welcome .box-container {
+	display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,2fr));
+	gap: 2rem;
+    padding: 3rem 9rem 6rem 9rem;
+}
+
+.welcome .box-container .box {
+	width: 33%;
+	background: var(--black);
+	box-shadow: var(--box-shadow);
+	text-align: center;
+	padding-bottom: 1%;
+}
+
+.welcome .box-container .box .image {
+	height: 30rem;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.welcome .box-container .box .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.welcome .box-container .box .image:hover img {
+	transform: scale(1.1);
+} 
+
+.welcome .box-container .box .image .fa-heart {
+	position: absolute;
+	top: 2.5rem;right: 2.5rem;
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 2rem;
+	background: #fff;
+	color: var(--black);
+}
+
+.welcome .box-container .box .image .fa-heart:hover {
+	background-color: var(--green);
+	color: #fff;
+}
+
+.welcome .box-container .box .content {
+	padding: 2rem;
+	padding-top: 2rem;
+}
+
+.welcome .box-container .box .content h3 {
+	color: var(--light-color);
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+.welcome .box-container .box .content p {
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 300;
+	padding: .5rem 0;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: none;
+}
 
 /** media query**/
 @media (max-width: 991px) {
