@@ -4,150 +4,37 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ristorante</title>
-        <!-- slider  -->
-	    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-        <!-- Font awesome -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-        <!-- CSS personalizado -->
-        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <title>Login</title>
+        <link rel="stylesheet" href="./css/login.css">
     </head>
     <body>
-        <!-- Header inicio -->
-        <header>
-            <a href="#" class="logo"><img src="./img/logotipo.png" alt="logotipo restaurante"></a>
-
-            <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#menu">Menu</a>
-                <a href="#chefes">Chefes</a>
-                <a href="#reservas">Reservas</a>
-                <a href="#blog">Blog</a>
-            </nav>
-
-             <div class="icons">
-                <i class="fas fa-bars" id="menu"></i>
-                <i class="fas fa-search" id="search-icon"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-        </header>
-        <!-- Header fim -->
-
-        <!-- Inicio carrossel -->
-        <div class="home" id="home">
-            <div class="swiper home-slider">
-                <div  class="swiper-wrapper wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide slide slide1">
-                        <div class="content">
-                            <h3>Delicias Italianas</h3>
-                            <h1>Voucher de presente</h1>
-                            <p>
-                                presenteie seus amigos & familiares queridos
-                            </p>
-                            <a href="#" class="btn">Peça agora</a>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide slide slide2">
-                        <div class="content">
-                           <h3>10% de Desconto</h3>
-                            <h1>Pizzas</h1>
-                            <p>
-                                varios pratos típicos
-                            </p>
-                            <a href="#" class="btn">Peça agora</a>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide slide slide3">
-                        <div class="content">
-                            <h3>Estamos Abertos</h3>
-                            <h1>Massas Frescas</h1>
-                            <p>
-                                você vai adorar nossas massas artesanais
-                            </p>
-                            <a href="#" class="btn">Peça agora</a>
-                        </div>
-                    </div>
+        <div class="container">
+            <!-- TODO: ver se vai ficar com essa tela -->
+            <h1>LOGIN</h1>
+            <form action="">
+                <div class="form-control">
+                    <input type="text" id="email" placeholder="Digite seu e-mail"required>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
+                <div class="form-control">
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <button class="btn" type="submit" onclick="login()">Entrar</button>
+                <p>Esqueceu a senha? <a href="#">Criar conta</a></p>
+            </form>
         </div>
-        <!-- Fim carrossel -->
+        <script>
+            function login(){
+                var login = document.getElementById("email").value;
+                var senha = document.getElementById("senha").value;
 
-        <!-- inicio da primeira sessao -->
-        <section class="welcome" id="sobre">
-            <h1 class="heading">BEM VINDO AO RISTO</h1>
-            <center><h3 class="sub-heading"> ~ Qualidade & Sabor ~ </h3></center>
-
-            <div class="box-container">
-                <!-- BOX 1 -->
-                <div class="box">
-                    <div class="image">
-                        <img src="./img/post-jay.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>NÍVEL PROFISSIONAL</h3>
-                        <p>Também não há quem ame ou persiga ou deseje obter dor de si mesmo, porque é dor, mas porque ocasionalmente ocorrem circunstâncias.</p>
-                        <a href="#" class="btn">LEIA MAIS</a>
-                    </div>
-                </div>
-                <!-- BOX 2 -->
-                <div class="box">
-                    <div class="image">
-                        <img src="./img/post-jorge.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>COMIDA ARTESANAL</h3>
-                        <p>Por uma hora livre, quando o nosso poder é desenfreado e quando nada impede de criar o nosso presente e acima de tudo fazer o que mais gostamos, todo prazer é bem-vindo.</p>
-                        <a href="#" class="btn">LEIA MAIS</a>
-                    </div>
-                </div>
-                <!-- BOX 3 -->
-                <div class="box">
-                    <div class="image">
-                        <img src="./img/post-max.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>COMIDA FRESCA</h3>
-                        <p>Pois no nosso tempo livre, quando somos livres <br>para escolher,e nada nos impede de fazer o <br>que mais nos agrada.</p>
-                        <a href="#" class="btn">LEIA MAIS</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- Fim da primeira sessao -->
-       
-       <!-- scripts -->
-       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-       <script type="text/javascript">
-             /** carrossel **/
-            var swiper = new Swiper(".home-slider", {
-                spaceBetween: 30,
-                centeredSlides: true,
-                autoplay: {
-                delay: 7500,
-                disableOnInteraction: false,
-                },
-                pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                },
-                loop:true,
-            });
-            
-            /** navbar **/
-            let menu = document.querySelector('#menu');
-            let navbar = document.querySelector('.navbar');
-
-            menu.onclick = () => {
-                menu.classList.toggle('fa-times');
-                navbar.classList.toggle('active');
+                if(login == "admin@admin.com" && senha == "admin123") {
+                    alert("Conectado com sucesso!!!");
+                    location.href = "home.html";
+                }
+                else {
+                    alert("Error - Senha ou usuario invalidos!!!");
+                }
             }
-       </script>
+        </script>
     </body>
 </html>
