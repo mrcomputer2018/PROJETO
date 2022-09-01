@@ -5,27 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="./css/login.css">
     </head>
     <body>
         <div class="container">
-            //TODO: ver se vai ficar com essa tela
-            <h1>Log in</h1>
+            <!-- TODO: ver se vai ficar com essa tela -->
+            <h1>LOGIN</h1>
             <form action="">
                 <div class="form-control">
-                    <input type="text" required>
-                    <label for="">Seu e-mail</label>
+                    <input type="text" id="email" placeholder="Digite seu e-mail"required>
                 </div>
                 <div class="form-control">
-                    <input type="password" name="" id="" required>
-                    <label for="">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
                 </div>
-                <button class="btn" type="submit">Entrar</button>
+                <button class="btn" type="submit" onclick="login()">Entrar</button>
                 <p>Esqueceu a senha? <a href="#">Criar conta</a></p>
             </form>
         </div>
+        <script>
+            function login(){
+                var login = document.getElementById("email").value;
+                var senha = document.getElementById("senha").value;
+            }
+        </script>
     </body>
 </html>
