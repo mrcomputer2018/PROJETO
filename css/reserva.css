@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    text-align: center;
+    margin-top: 15%;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.formulario {
+    display: inline-block;
+    width: 70%;
+    height: 580px;
+    margin: 10px 0 0 0;
+    padding: 15px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: left;
+}
+
+form {
+    padding: 2% 0 0 5%;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form input {
+    margin: 0 0 25px 0;
+    padding: 5px;
+    width: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+form input:hover {
+    border: 2px solid #FACC15;
+    transition: 0.3s;
+}
+
+.dia-reserva {
+    width: 190px;
+}
+
+.num-pessoas {
+    width: 40px;
+    border-radius: 2px;
+    margin: 0 5px 0 0;
+}
+
+.obs-num-pessoas {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.btn-enviar {
+    text-align: center;
+}
+
+.btn-fazer-reserva {
+    background: #FACC15;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 30px 0 0 0;
+    border-radius: 5px;
+    width: 200px;
+    height: 66px;
+}
+
+.btn-fazer-reserva:hover {
+    background: #ffdc50;
+    border: 1px solid #000000;
+    color: #000000bb;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+footer {
+    background: #333;
+    color: white;
+    margin: 5% 0 0 0;
+}
+
+footer h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+.rodape-main {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 11px;
+}
+
+.rodape-sobre {
+    width: 20%;
+}
+
+.logo-rodape {
+    width: 120px;
+}
+
+.icones-redes {
+    font-size: 25px;
+}

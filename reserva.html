@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ristorante</title>
+        <!-- slider  -->
+	    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <!-- Font awesome -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <!-- CSS personalizado -->
+        <link rel="stylesheet" type="text/css" href="./css/reserva.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+    </head>
+    <body>
+        <!-- Header inicio -->
+        <header>
+            <a href="#" class="logo"><img src="./img/logotipo.png" alt="logotipo restaurante"></a>
+
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#menu">Menu</a>
+                <a href="#chefes">Chefes</a>
+                <a href="reserva.html">Reservas</a>
+                <a href="#blog">Blog</a>
+            </nav>
+
+             <div class="icons">
+                <i class="fas fa-bars" id="menu"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </header>
+        <!-- Header fim -->
+
+        <main>
+            <h1>DADOS DA RESERVA</h1>
+
+            <!-- Formulário inicio -->
+            <div class="formulario">
+                <form action="">
+                    <label for="fname">Nome</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="João Lucas"><br>
+                    <label for="lname">Sobrenome</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="da Silva"><br>
+                    <label for="fname">Endereço</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Rua do reservista, 100, Rio de Janeiro"><br>
+                    <label for="lname">Telefone</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="(21) 99999-9999"><br>
+                    <label for="birthdaytime">Dia da Reserva</label><br>
+                    <input class="dia-reserva" type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+                    <label for="quantity">Quantas Pessoas Sentaram à Mesa</label><br>
+                    <input class="num-pessoas" type="number" id="quantity" name="quantity" placeholder="0" min="1" max="6"><span class="obs-num-pessoas">*Limite de 6 Pessoas por Reserva</span><br>
+                </form>
+                <div class="btn-enviar">
+                    <button class="btn-fazer-reserva" type="submit">Fazer Reserva</button>
+                </div>
+                
+            </div>
+            <!-- Formulário fim -->
+        </main>
+
+        <!-- Rodapé inicio -->
+        <footer>
+            <div class="rodape-main">
+                <div class="rodape-sobre">
+                    <h2>Sobre Nós</h2>
+                    <p>Somos uma empresa composta por pessoas interessadas em levar alimento de verdade para você e sua família.</p>
+                </div>
+                
+                <div class="restaurante-rights">
+                    <img class="logo-rodape" src="./img/logotipo.png" alt="logotipo restaurante"></a>
+                    <h3><i class="fa-regular fa-copyright"></i> Ristorante - Todos os direitos reservados 2022</h3>
+                </div>
+                
+                <div class="restaurante-redes">
+                    <h2>Contatos</h2>
+                    <div class="icones-redes">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Rodapé fim -->
+    </body>
+</html>
