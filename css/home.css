@@ -273,6 +273,87 @@ header .icons #menu {
 	text-transform: none;
 }
 
+/** Reservas **/
+.reservation {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.reservation .image {
+	width: 55%;
+	background: url(../img/arthur-reserva.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-top: 9rem;
+}
+
+.reservation .form {
+	background: #181818;
+	width: 45%;
+	padding: 9rem 7%;
+}
+
+.reservation .form h1 {
+	color: #fff;
+	margin-top: 0;
+	padding-top: 4rem;
+}
+
+.reservation .form p {
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 300;
+	padding: .5rem 0 1rem 0;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: none;
+	margin-bottom: 2rem;
+}
+
+.reservation .form-holder {
+	display: flex;
+	grid-gap: 3rem;
+}
+
+.reservation .form-holder {
+	width: 100%;
+}
+
+/** rodape **/
+footer {
+    background: #333;
+    color: white;
+    margin: 5% 0 0 0;
+}
+
+footer h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+.rodape-main {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 11px;
+}
+
+.rodape-sobre {
+    width: 20%;
+}
+
+.logo-rodape {
+    width: 120px;
+}
+
+.icones-redes {
+    font-size: 25px;
+}
+
+
 /** media query**/
 @media (max-width: 991px) {
     html {
