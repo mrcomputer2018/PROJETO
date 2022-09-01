@@ -312,15 +312,6 @@ header .icons #menu {
 	margin-bottom: 2rem;
 }
 
-.reservation .form-holder {
-	display: flex;
-	grid-gap: 3rem;
-}
-
-.reservation .form-holder {
-	width: 100%;
-}
-
 /** rodape **/
 footer {
     background: #333;
