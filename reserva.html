@@ -29,7 +29,6 @@
              <div class="icons">
                 <i class="fas fa-bars" id="menu"></i>
                 <i class="fas fa-search" id="search-icon"></i>
-                <i class="fas fa-heart"></i>
                 <i class="fas fa-shopping-cart"></i>
             </div>
         </header>
@@ -42,7 +41,7 @@
             <div class="formulario">
                 <form action="">
                     <label for="fname">Nome</label><br>
-                    <input type="text" id="fname" name="fname" placeholder="João Lucas"><br>
+                    <input type="text" id="fname" name="fname" placeholder="João Lucas" autofocus><br>
                     <label for="lname">Sobrenome</label><br>
                     <input type="text" id="lname" name="lname" placeholder="da Silva"><br>
                     <label for="fname">Endereço</label><br>
@@ -51,13 +50,12 @@
                     <input type="text" id="lname" name="lname" placeholder="(21) 99999-9999"><br>
                     <label for="birthdaytime">Dia da Reserva</label><br>
                     <input class="dia-reserva" type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
-                    <label for="quantity">Quantas Pessoas Sentaram à Mesa</label><br>
+                    <label for="quantity">Quantas Pessoas Sentarao à Mesa</label><br>
                     <input class="num-pessoas" type="number" id="quantity" name="quantity" placeholder="0" min="1" max="6"><span class="obs-num-pessoas">*Limite de 6 Pessoas por Reserva</span><br>
                 </form>
                 <div class="btn-enviar">
                     <button class="btn-fazer-reserva" type="submit">Fazer Reserva</button>
                 </div>
-                
             </div>
             <!-- Formulário fim -->
         </main>
