@@ -236,8 +236,7 @@ header .icons #menu {
 
 .welcome .box-container .box .image .fa-heart {
 	position: absolute;
-	top: 2.5rem;
-	right: 2.5rem;
+	top: 2.5rem;right: 2.5rem;
 	height: 5rem;
 	width: 5rem;
 	line-height: 5rem;
@@ -315,36 +314,57 @@ header .icons #menu {
 
 /** rodape **/
 footer {
-    background: #333;
-    color: white;
+    background: var(--black);
     margin: 5% 0 0 0;
-	margin-top: 0px;
 }
 
 footer h2, h3 {
     margin: 0 0 10px 0;
 }
 
+footer p {
+    text-align: center;
+    padding: 2rem;
+}
+
 .rodape-main {
+    width: 80%;
     display: flex;
     text-align: center;
-    padding: 20px;
     align-items: center;
+   justify-items: center;
     justify-content: space-around;
+
+    padding: 20px;
+    margin: 0 auto;
     font-size: 11px;
+    border-bottom: 1px solid white;
 }
 
 .rodape-sobre {
-    width: 20%;
+    width: 20rem;
 }
 
-.logo-rodape {
-    width: 120px;
+.paragrafo_sobre_rodape {
+    padding: .25rem;
+}
+
+div.logo-rodape {
+    width: 20rem;
+}
+
+.restaurante-rights {
+    width: 10rem;
 }
 
 .icones-redes {
+    width: 20rem;
     font-size: 25px;
-	color: var(--white);
+}
+
+.icones-redes a i {
+    margin-right: .5rem;
+    color: var(--light-color);
 }
 
 
