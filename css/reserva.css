@@ -155,5 +155,10 @@ div.logo-rodape {
 .icones-redes {
     width: 20rem;
     font-size: 25px;
-    color: var(--white);
 }
+
+.icones-redes a i {
+    margin-right: .5rem;
+    color: var(--light-color);
+}
+
