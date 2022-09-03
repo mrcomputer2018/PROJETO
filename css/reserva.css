@@ -109,6 +109,7 @@ form input:hover {
 
 /** Rodape  **/
 footer {
+    color: white;
     background: var(--black);
     margin: 5% 0 0 0;
 }
@@ -144,12 +145,12 @@ footer p {
     padding: .25rem;
 }
 
-div.logo-rodape {
-    width: 20rem;
+.logo-rodape {
+    width: 10rem;
 }
 
 .restaurante-rights {
-    width: 10rem;
+    width: 20rem;
 }
 
 .icones-redes {
@@ -158,7 +159,7 @@ div.logo-rodape {
 }
 
 .icones-redes a i {
-    margin-right: .5rem;
     color: var(--light-color);
+    margin-right: .5rem;
 }
 

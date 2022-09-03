@@ -314,7 +314,8 @@ header .icons #menu {
 
 /** rodape **/
 footer {
-    background: var(--black);
+	color: white;
+	background: var(--black);
     margin: 5% 0 0 0;
 }
 
@@ -328,7 +329,7 @@ footer p {
 }
 
 .rodape-main {
-    width: 80%;
+	width: 80%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -345,16 +346,12 @@ footer p {
     width: 20rem;
 }
 
-.paragrafo_sobre_rodape {
-    padding: .25rem;
-}
-
-div.logo-rodape {
-    width: 20rem;
+.logo-rodape {
+    width: 10rem;
 }
 
 .restaurante-rights {
-    width: 10rem;
+    width: 20rem;
 }
 
 .icones-redes {
@@ -362,9 +359,13 @@ div.logo-rodape {
     font-size: 25px;
 }
 
+.paragrafo_sobre_rodape {
+    padding: .25rem;
+}
+
 .icones-redes a i {
+	color: var(--light-color);
     margin-right: .5rem;
-    color: var(--light-color);
 }
 
 
