@@ -236,7 +236,8 @@ header .icons #menu {
 
 .welcome .box-container .box .image .fa-heart {
 	position: absolute;
-	top: 2.5rem;right: 2.5rem;
+	top: 2.5rem;
+	right: 2.5rem;
 	height: 5rem;
 	width: 5rem;
 	line-height: 5rem;
