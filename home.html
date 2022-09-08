@@ -1,190 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ristorante</title>
-        <!-- slider  -->
-	    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-        <!-- Font awesome -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-        <!-- CSS personalizado -->
-        <link rel="stylesheet" type="text/css" href="./css/home.css">
-    </head>
-    <body>
-        <!-- Header inicio -->
-        <header>
-            <a href="#" class="logo"><img src="./img/logotipo.png" alt="logotipo restaurante"></a>
 
-            <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#cardapio">Cardápio</a>
-                <a href="#chefes">Chefes</a>
-                <a href="#reserva">Reservas</a>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante</title>
+    <!-- slider  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+</head>
 
-             <div class="icons">
-                <i class="fas fa-bars" id="menu"></i>
-                <i class="fas fa-search" id="search-icon"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-        </header>
-        <!-- Header fim -->
+<body>
+    <!-- Header inicio -->
+    <header>
+        <a href="#" class="logo"><img src="./img/logotipo.png" alt="logotipo restaurante"></a>
 
-        <!-- Inicio carrossel -->
-        <div class="home" id="home">
-            <div class="swiper home-slider">
-                <div  class="swiper-wrapper wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide slide slide1">
-                        <div class="content">
-                            <h3>Delicias Italianas</h3>
-                            <h1>Voucher de presente</h1>
-                            <p>
-                                presenteie seus amigos & familiares queridos
-                            </p>
-                            <a href="#" class="btn">Peça agora</a>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide slide slide2">
-                        <div class="content">
-                           <h3>10% de Desconto</h3>
-                            <h1>Pizzas</h1>
-                            <p>
-                                varios pratos típicos
-                            </p>
-                            <a href="#" class="btn">Peça agora</a>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide slide slide3">
-                        <div class="content">
-                            <h3>Estamos Abertos</h3>
-                            <h1>Massas Frescas</h1>
-                            <p>
-                                você vai adorar nossas massas artesanais
-                            </p>
-                            <a href="#" class="btn">Peça agora</a>
-                        </div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#chefes">Chefes</a>
+            <a href="#reserva">Reservas</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <!-- Header fim -->
+
+    <!-- Inicio carrossel -->
+    <div class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                        <h3>Delicias Italianas</h3>
+                        <h1>Voucher de presente</h1>
+                        <p>
+                            presenteie seus amigos & familiares queridos
+                        </p>
+                        <a href="#" class="btn">Peça agora</a>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+                        <h3>10% de Desconto</h3>
+                        <h1>Pizzas</h1>
+                        <p>
+                            varios pratos típicos
+                        </p>
+                        <a href="#" class="btn">Peça agora</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+                        <h3>Estamos Abertos</h3>
+                        <h1>Massas Frescas</h1>
+                        <p>
+                            você vai adorar nossas massas artesanais
+                        </p>
+                        <a href="#" class="btn">Peça agora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- Fim carrossel -->
+
+    <!-- inicio da primeira sessao -->
+    <section class="welcome" id="sobre">
+        <h1 class="heading">BEM VINDO AO RISTO</h1>
+        <center>
+            <h3 class="sub-heading"> ~ Qualidade & Sabor ~ </h3>
+        </center>
+
+        <div class="box-container">
+            <!-- BOX 1 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./img/post-jay.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>NÍVEL PROFISSIONAL</h3>
+                    <p>Também não há quem ame ou persiga ou deseje obter dor de si mesmo, porque é dor, mas porque
+                        ocasionalmente ocorrem circunstâncias.</p>
+                    <a href="#" class="btn">LEIA MAIS</a>
+                </div>
+            </div>
+            <!-- BOX 2 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./img/post-jorge.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>COMIDA ARTESANAL</h3>
+                    <p>Por uma hora livre, quando o nosso poder é desenfreado e quando nada impede de criar o nosso
+                        presente e acima de tudo fazer o que mais gostamos, todo prazer é bem-vindo.</p>
+                    <a href="#" class="btn">LEIA MAIS</a>
+                </div>
+            </div>
+            <!-- BOX 3 -->
+            <div class="box">
+                <div class="image">
+                    <img src="./img/post-max.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>COMIDA FRESCA</h3>
+                    <p>Pois no nosso tempo livre, quando somos livres <br>para escolher,e nada nos impede de fazer o
+                        <br>que mais nos agrada.</p>
+                    <a href="#" class="btn">LEIA MAIS</a>
+                </div>
             </div>
         </div>
-        <!-- Fim carrossel -->
 
-        <!-- inicio da primeira sessao -->
-        <section class="welcome" id="sobre">
-            <h1 class="heading">BEM VINDO AO RISTO</h1>
-            <center><h3 class="sub-heading"> ~ Qualidade & Sabor ~ </h3></center>
+    </section>
+    <!-- Fim da primeira sessao -->
 
-            <div class="box-container">
-                <!-- BOX 1 -->
-                <div class="box">
-                    <div class="image">
-                        <img src="./img/post-jay.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>NÍVEL PROFISSIONAL</h3>
-                        <p>Também não há quem ame ou persiga ou deseje obter dor de si mesmo, porque é dor, mas porque ocasionalmente ocorrem circunstâncias.</p>
-                        <a href="#" class="btn">LEIA MAIS</a>
-                    </div>
+    <!-- inicio da sessao chefes -->
+    <section class="chef-section" id="chefes">
+        <h1 class="title">NOSSOS CHEFES</h1>
+
+        <div class="box-container">
+            <!-- CARD 1 -->
+            <div class="cards-chefes">
+                <div class="image">
+                    <img src="./img/chefe.jpg" alt="">
                 </div>
-                <!-- BOX 2 -->
-                <div class="box">
-                    <div class="image">
-                        <img src="./img/post-jorge.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>COMIDA ARTESANAL</h3>
-                        <p>Por uma hora livre, quando o nosso poder é desenfreado e quando nada impede de criar o nosso presente e acima de tudo fazer o que mais gostamos, todo prazer é bem-vindo.</p>
-                        <a href="#" class="btn">LEIA MAIS</a>
-                    </div>
-                </div>
-                <!-- BOX 3 -->
-                <div class="box">
-                    <div class="image">
-                        <img src="./img/post-max.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>COMIDA FRESCA</h3>
-                        <p>Pois no nosso tempo livre, quando somos livres <br>para escolher,e nada nos impede de fazer o <br>que mais nos agrada.</p>
-                        <a href="#" class="btn">LEIA MAIS</a>
-                    </div>
+                <div class="info-chef">
+                    <h3>JEAN PIETRO</h3>
+                    <h4>Chef de Cuisine</h4>
+                    <p>Supervisiona e gerencia toda a equipe,<br> é o responsável por desenvolver nossos pratos .</p>
                 </div>
             </div>
-
-        </section>
-        <!-- Fim da primeira sessao -->
-
-        <!-- inicio sessao reservas --> 
-        <div class="reservation" id="reserva">
-            <div class="image">
-                
+            <!-- CARD 2 -->
+            <div class="cards-chefes">
+                <div class="image">
+                    <img src="./img/saladeiro.jpg" alt="">
+                </div>
+                <div class="info-chef">
+                    <h3>RICHARD LAFONTE</h3>
+                    <h4>Garde Manger</h4>
+                    <p>Produz as preparações frias como saladas, as conservas, patês, entradas frias.</p>
+                </div>
             </div>
-            <div class="form">
-                <h1 class="heading">RESERVAS</h1>
-                <center><h3 class="sub-heading">~ Confira nossas mesas ~</h3></center>
-                <center><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p></center>
-                <center><a href="reserva.html" class="btn">Reserve Agora</a></center>
+            <!-- CARD 3 -->
+            <div class="cards-chefes">
+                <div class="image">
+                    <img src="./img/legumer.jpg" alt="">
+                </div>
+                <div class="info-chef">
+                    <h3>GIULIANA PAGANO</h3>
+                    <h4>Légumier / Entremetier</h4>
+                    <p>Prepara as guarnições de vegetais e carboidratos como arroz,
+                         feijão, macarrão, além de tira-gostos quentes.
+                        
+                </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="cards-chefes">
+                <div class="image">
+                    <img src="./img/passiere.jpg" alt="">
+                </div>
+                <div class="info-chef" id="text">
+                    <h3>BEATRICE GALLO</h3>
+                    <h4>CHEF PÂTISSIER</h4>
+                    <p>Responsável pela nossa amada área das sobremesas.
+                        Cria delicias para deixar sua vida mais doce.</p>
+                </div>
             </div>
         </div>
-        <!-- Fim sessao reservas -->       
 
-         <!-- Rodapé inicio -->
-         <footer>
-            <div class="rodape-main">
-                <div class="rodape-sobre">
-                    <h2>Sobre Nós</h2>
-                    <p class="paragrafo_sobre_rodape">Somos uma empresa composta por pessoas interessadas em levar alimento de verdade para você e sua família.</p>
-                </div>
-                
-                <div class="restaurante-rights">
-                    <img class="logo-rodape" src="./img/logotipo.png" alt="logotipo restaurante"></a>
-                </div>
-                
-                <div class="restaurante-redes">
-                    <h2>Contatos</h2>
-                    <div class="icones-redes">
-                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
+    </section>
+
+    <!-- fim da sessao chefes -->
+
+    <!-- inicio sessao reservas -->
+    <div class="reservation" id="reserva">
+        <div class="image">
+
+        </div>
+        <div class="form">
+            <h1 class="heading">RESERVAS</h1>
+            <center>
+                <h3 class="sub-heading">~ Confira nossas mesas ~</h3>
+            </center>
+            <center>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. </p>
+            </center>
+            <center><a href="reserva.html" class="btn">Reserve Agora</a></center>
+        </div>
+    </div>
+    <!-- Fim sessao reservas -->
+
+    <!-- Rodapé inicio -->
+    <footer>
+        <div class="rodape-main">
+            <div class="rodape-sobre">
+                <h2>Sobre Nós</h2>
+                <p class="paragrafo_sobre_rodape">Somos uma empresa composta por pessoas interessadas em levar alimento
+                    de verdade para você e sua família.</p>
+            </div>
+
+            <div class="restaurante-rights">
+                <img class="logo-rodape" src="./img/logotipo.png" alt="logotipo restaurante"></a>
+            </div>
+
+            <div class="restaurante-redes">
+                <h2>Contatos</h2>
+                <div class="icones-redes">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
-            <p><i class="fa-regular fa-copyright"></i> Ristorante - Todos os direitos reservados 2022</p>
-        </footer>
-        <!-- Rodapé fim -->
-       
-       <!-- scripts -->
-       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-       <script type="text/javascript">
-             /** carrossel **/
-            var swiper = new Swiper(".home-slider", {
-                spaceBetween: 30,
-                centeredSlides: true,
-                autoplay: {
+        </div>
+        <p><i class="fa-regular fa-copyright"></i> Ristorante - Todos os direitos reservados 2022</p>
+    </footer>
+    <!-- Rodapé fim -->
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        /** carrossel **/
+        var swiper = new Swiper(".home-slider", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
                 delay: 7500,
                 disableOnInteraction: false,
-                },
-                pagination: {
+            },
+            pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
-                },
-                loop:true,
-            });
-            
-            /** navbar **/
-            let menu = document.querySelector('#menu');
-            let navbar = document.querySelector('.navbar');
+            },
+            loop: true,
+        });
 
-            menu.onclick = () => {
-                menu.classList.toggle('fa-times');
-                navbar.classList.toggle('active');
-            }
-       </script>
-    </body>
+        /** navbar **/
+        let menu = document.querySelector('#menu');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+
 </html>
