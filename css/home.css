@@ -452,10 +452,14 @@ header .icons #menu {
 
 
 /** Section Video **/
-.video-container {
+section .video-container {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+}
+
+section .video-container iframe{
+	margin-top: 3rem;
 }
 
 /** rodape **/
