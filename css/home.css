@@ -5,6 +5,7 @@
     --white: #fff;
     --white-menu-hamburger: #eee;
     --light-color: #facc15;
+	--gray-p: #e5e5e5;
     --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
@@ -276,6 +277,66 @@ header .icons #menu {
 	text-transform: none;
 }
 
+
+/** Section Cardapio **/
+.our-menu {
+	background: url(../img/our-menu-bg-1.png) left top no-repeat, url(../img/our-menu-bg-3.jpg);
+}
+
+.our-menu .heading { 
+	color: var(--white-menu-hamburger);
+}
+
+.our-menu .menu-container {
+	padding: 3rem 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50rem,2fr));
+	gap: 5rem 10rem;
+}
+
+.our-menu .menu-container .item .item-name {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	margin-top: .5rem;
+}
+
+.our-menu .menu-container .item .menu-item {
+	padding: .5rem 2rem;
+}
+
+.our-menu .menu-container .item .item-name h2 {
+	font-size: 3rem;
+	color: var(--gray-p);
+	font-weight: 300;
+}
+
+.our-menu .menu-container .item .menu-item h3 {
+	font-size: 2rem;
+	color: var(--gray-p);
+	font-weight: 200;
+	display: inline-block;
+}
+
+.our-menu .menu-container .item .menu-item span {
+	width: 37%;
+	display: inline-block;
+	border-bottom: 1px dotted #e5e5e5;
+}
+
+.our-menu .menu-container .item .menu-item ul {
+	display: flex;
+	font-size: 1.5rem;
+	list-style: none;
+	padding: .8rem 0;
+	font-weight: 200;
+}
+
+.our-menu .menu-container .item .menu-item ul li a {
+	color: #b9b9b9;
+}
+
+
 /** Section Chefs **/
 .chef-section .box-container {
 	display: flex;
@@ -373,13 +434,13 @@ header .icons #menu {
 }
 
 .reservation .form h1 {
-	color: #fff;
+	color: var(--white-menu-hamburger);
 	margin-top: 0;
 	padding-top: 4rem;
 }
 
 .reservation .form p {
-	color: #fff;
+	color: #e5e5e5;
 	font-size: 1.8rem;
 	font-weight: 300;
 	padding: .5rem 0 1rem 0;
