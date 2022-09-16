@@ -107,6 +107,16 @@ form input:hover {
     font-size: 15px;
 }
 
+.btn-voltar {
+    background: #FACC15;
+    font-weight: bold;
+    font-size: 14px;
+    /* margin: 30px 0 0 0; */
+    border-radius: 5px;
+    width: 200px;
+    height: 66px;
+}
+
 /** Rodape  **/
 footer {
     color: white;
