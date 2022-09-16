@@ -451,6 +451,13 @@ header .icons #menu {
 }
 
 
+/** Section Video **/
+.video-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
 /** rodape **/
 footer {
 	color: white;
