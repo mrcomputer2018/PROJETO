@@ -90,6 +90,7 @@ html {
 	left: 0;
 }
 
+
 /** navbar**/
 header {
     position: fixed;
@@ -141,6 +142,7 @@ header .icons i:hover {
 header .icons #menu {
 	display: none;
 }
+
 
 /** Carrossel **/
 .home .home-slider .slide {
@@ -200,6 +202,7 @@ header .icons #menu {
 	height: 15px;
 	border-radius: 0;
 }
+
 
 /** bem-vindo **/
 .welcome .box-container {
@@ -273,6 +276,80 @@ header .icons #menu {
 	text-transform: none;
 }
 
+/** Section Chefs **/
+.chef-section .box-container {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px 90px 30px 90px;
+	text-align: center;
+  
+}
+
+.chef-section .title {
+	text-align: center;
+	font-size: 40px;
+  text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.box-container .cards-chefes {
+	display: flex;
+  flex-direction: column;
+	width: 500px;
+	margin: 16px;
+  background-color: var(--black);
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.cards-chefes:hover {
+	background-color:var(--light-color);
+	color: #181818;
+	-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+.cards-chefes .image {
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+	height: 400px;
+	margin: 16px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.cards-chefes .image img {
+	height: 100%;
+	border-radius: 30px;
+  
+}
+
+.cards-chefes .info-chef {
+	margin: 10px;
+	color: var(--light-color);
+	font-size: 20px;
+}
+
+.cards-chefes:hover > .info-chef  {
+	color: #181818;
+}
+
+.info-chef > p {
+	color: #fff;
+	margin: 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: none;
+}
+
+.cards-chefes:hover > .info-chef > p {
+	color:var(--black);
+}
+
+
 /** Reservas **/
 .reservation {
 	display: flex;
@@ -311,6 +388,7 @@ header .icons #menu {
 	text-transform: none;
 	margin-bottom: 2rem;
 }
+
 
 /** rodape **/
 footer {
@@ -412,67 +490,4 @@ footer p {
         font-size: 2rem;
         background-color: var(--black);
     }
-}
-/*Section Chefs*/
-.chef-section .box-container {
-	display: flex;
-	justify-content: space-evenly;
-	padding: 60px 90px;
-	text-align: center;
-  
-}
-.chef-section .title {
-	text-align: center;
-	font-size: 40px;
-  text-transform: uppercase;
-	letter-spacing: 1px;
-}
-.box-container .cards-chefes {
-	display: flex;
-  flex-direction: column;
-	width: 500px;
-	margin: 16px;
-  background-color: var(--black);
-	border-radius: 5px;
-	box-shadow: 10px 10px 5px #aaaaaa;
-}
-.cards-chefes:hover {
-	background-color:var(--light-color);
-	color: #181818;
-	-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-.cards-chefes .image {
-	display: flex;
-  flex-direction: column;
-	align-items: center;
-	height: 400px;
-	margin: 16px;
-	border-radius: 10px;
-	overflow: hidden;
-	position: relative;
-}
-.cards-chefes .image img {
-	height: 100%;
-	border-radius: 30px;
-  
-}
-.cards-chefes .info-chef {
-	margin: 10px;
-	color: var(--light-color);
-	font-size: 20px;
-}
-.cards-chefes:hover > .info-chef  {
-	color: #181818;
-}
-.info-chef > p {
-	color: #fff;
-	margin: 10px;
-	font-size: 14px;
-	line-height: 1.5;
-	letter-spacing: 1px;
-	text-transform: none;
-}
-.cards-chefes:hover > .info-chef > p {
-	color:var(--black);
 }
