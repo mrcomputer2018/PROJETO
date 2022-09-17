@@ -121,15 +121,26 @@ form input:hover {
 }
 
 .btn-voltar a {
-    margin-top: 2rem;
+    color: var(--black);
     background: gray;
     font-weight: bold;
     font-size: 14px;
-    /* margin: 30px 0 0 0; */
-    border-radius: 5px;
-    width: 200px;
-    height: 66px;
+    padding: 2rem;
+    width: 4rem;
 }
+
+.btn-voltar:hover {
+    background: rgb(170, 170, 170);
+    border: 1px solid #000000;
+    color: var(--black);
+}
+
+.btn-voltar a:hover {
+    background: rgb(170, 170, 170);
+    font-size: 15px;
+}
+
+
 /** Rodape  **/
 footer {
     color: white;

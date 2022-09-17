@@ -7,7 +7,7 @@
         <title>Login</title>
         <link rel="stylesheet" href="./css/login.css">
     </head>
-    <body>
+    <>
         <div class="container">
             <!-- TODO: ver se vai ficar com essa tela -->
             <h1>LOGIN</h1>
@@ -22,19 +22,8 @@
                 <p>Esqueceu a senha? <a href="#">Criar conta</a></p>
             </form>
         </div>
-        <script>
-            function login(){
-                var login = document.getElementById("email").value;
-                var senha = document.getElementById("senha").value;
-
-                if(login == "admin@admin.com" && senha == "admin123") {
-                    alert("Conectado com sucesso!!!");
-                    location.href = "home.html";
-                }
-                else {
-                    alert("Error - Senha ou usuario invalidos!!!");
-                }
-            }
-        </script>
+        
+        <script type="text/javascript" src="./js/login.js"></script>
+        
     </body>
 </html>

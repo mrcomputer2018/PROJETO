@@ -17,14 +17,14 @@
         <header>
             <a href="#" class="logo"><img src="./img/logotippo_novo.jpeg" alt="logotipo restaurante"></a>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#cardapio">Cardápio</a>
-            <a href="#chefes">Chefes</a>
-            <a href="#reserva">Reservas</a>
-            <a href="#receita">Receitas</a>
-        </nav>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#chefes">Chefes</a>
+                <a href="#reserva">Reservas</a>
+                <a href="#receita">Receitas</a>
+            </nav>
 
              <div class="icons">
                 <i class="fas fa-bars" id="menu"></i>
@@ -385,31 +385,7 @@
        
        <!-- scripts -->
        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-       <script type="text/javascript">
-             /** carrossel **/
-            var swiper = new Swiper(".home-slider", {
-                spaceBetween: 30,
-                centeredSlides: true,
-                autoplay: {
-                delay: 7500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            loop: true,
-        });
-
-        /** navbar **/
-        let menu = document.querySelector('#menu');
-        let navbar = document.querySelector('.navbar');
-
-        menu.onclick = () => {
-            menu.classList.toggle('fa-times');
-            navbar.classList.toggle('active');
-        }
-    </script>
+       <script type="text/javascript" src="./js/home.js"></script>
 </body>
 
 </html>
