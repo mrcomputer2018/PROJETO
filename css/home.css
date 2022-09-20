@@ -411,6 +411,96 @@ header .icons #menu {
 }
 
 
+/** section Pratos **/
+#sucessos {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    height: 780px;
+}
+
+#areap {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#fsr {
+    padding: 9px;
+    border: none;
+    border-radius: 3px;
+    background-color: #facc15;
+    top: 40px;
+    font-size: large;
+}
+
+
+.plates {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    float: left;
+}
+
+
+.overlay {
+    position: absolute;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    height: 301px;
+    width: 240px;
+    margin-bottom: 27px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #333;
+}
+
+.htp {
+    padding: 65px;
+    margin-top: 13px;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+}
+
+.plates:hover {
+    background-color: #facc15;
+}
+
+.plates:hover .overlay {
+    opacity: 1;
+}
+
+.im {
+    width: 240px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 17px black;
+}
+
+.texpra {
+    position: relative;
+    text-align: center;
+    top: 10px;
+	font-size: larger;
+}
+
+#titp {
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+
+
 /** Reservas **/
 .reservation {
 	display: flex;
